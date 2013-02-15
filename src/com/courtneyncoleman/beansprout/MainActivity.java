@@ -8,16 +8,21 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-
+import android.widget.ImageView;
 public class MainActivity extends Activity implements OnClickListener{
 
 	Button myButton; 
+	ImageView myImage; 
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
+		
 		myButton=(Button) findViewById(R.id.button1);
+		myImage=(ImageView) findViewById(R.id.imageView1);
+		
 		myButton.setOnClickListener(this);
 		
 	}
@@ -34,7 +39,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		// TODO Auto-generated method stub
 		Log.v("MainActivity", "Button was clicked"); 
 		
-		Intent i=new Intent(this.OtherActivity.class);
+		Intent i=new Intent(this, OtherActivity.class);
 		startActivity(i); 
 		
 	}

@@ -8,17 +8,46 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginBottom="28dp"
         android:text="@string/hello_world" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="BeanSproutLogin"
+        android:src="@drawable/beansproutlogin" />
 
     <Button
         android:id="@+id/button1"
+        style="android:buttonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
-        android:layout_alignRight="@+id/textView1"
-        android:layout_marginBottom="28dp"
-        android:text="Button" />
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginBottom="125dp"
+        android:layout_marginLeft="16dp"
+        android:text="Log In" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPassword" />
 
 </RelativeLayout>
