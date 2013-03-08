@@ -23,7 +23,10 @@
             </intent-filter>
         </activity>
         
-    <activity android:name="com.courtneyncoleman.beansprout.OtherActivity"></activity> 
+    <activity android:name="com.courtneyncoleman.beansprout.OtherActivity">
+        
+        
+    </activity> 
     </application>
 
 </manifest>
