@@ -3,9 +3,10 @@
     package="com.courtneyncoleman.beansprout"
     android:versionCode="1"
     android:versionName="1.0" >
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="17" />
 
     <application
@@ -25,6 +26,13 @@
         
     <activity android:name="com.courtneyncoleman.beansprout.OtherActivity">
         
+        
+    </activity> 
+    
+        <activity android:name="com.courtneyncoleman.beansprout.MediaActivity">
+            </activity>
+                <activity android:name="com.courtneyncoleman.beansprout.SignupActivity">
+            
         
     </activity> 
     </application>

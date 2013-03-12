@@ -2,14 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/otheractivitybackground"
     android:orientation="vertical" >
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/joshypic" 
-        android:contentDescription="@string/profileDescription"/>
+        android:text="@string/txtChildname"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:background="#FEF1B5"/>
+
+    <ImageButton
+        android:id="@+id/img_profilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/profileDescription"
+        android:src="@drawable/joshypic" />
 
     <TextView
         android:id="@+id/textView1"
@@ -19,25 +28,33 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/statusText"
+        android:id="@+id/txtStatus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#FFFFFF"
         android:ems="10"
-        android:hint="@string/statustexthint" >
-        <requestFocus />
-    </EditText>
+        android:hint="@string/statustexthint" 
+        />
+
 
     <Button
         android:id="@+id/btn_status"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/statusbuttontext" />
+        android:background="@drawable/custombutton"
+        android:text="@string/statusbuttontext" 
+        />
 
     <ListView
         android:id="@+id/listView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:divider="#000000">
-    </ListView>
+        android:layout_height="wrap_content"
+        android:background="#FEF1B5"
+        android:divider="#000000"
+        android:dividerHeight="@dimen/my_listdivider"
+        android:headerDividersEnabled="true" >
+
+        </ListView>
+   
 
 </LinearLayout>

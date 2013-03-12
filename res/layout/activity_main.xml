@@ -2,10 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity"
+    android:background="#000000" >
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/img_profilePic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -14,36 +15,50 @@
         android:contentDescription="@string/contentDescription"
         android:src="@drawable/beansproutlogin" />
 
-    <EditText
-        android:id="@+id/statusText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editText2"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:hint="@string/usernamehint" 
-        android:background="#FFFFFF"/>
-
     <Button
-        android:id="@+id/btn_status"
+        android:id="@+id/btn_login"
         style="android:buttonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/txtPassword"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="47dp"
-        android:background="#AAAAAA"
+        android:background="@drawable/custombutton"
         android:text="@string/loginbuttontext" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/txtPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/statusText"
+        android:layout_alignLeft="@+id/txtUsename"
         android:layout_centerVertical="true"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="@string/passwordhint"
         android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        style="@drawable/custombutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custombutton"
+        android:text="@string/btn_signup" />
+
+    <EditText
+        android:id="@+id/txtUsename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/usernamehint"/>
+
+        <requestFocus />
 	
 </RelativeLayout>

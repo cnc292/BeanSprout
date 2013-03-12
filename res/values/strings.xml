@@ -10,5 +10,26 @@
 	<string name="loginbuttontext">Log In Now!</string>
     <string name="profileDescription">Babypic</string>
 	<string name="statusbuttontext"> Update Status</string>
-	<string name="statustexthint"> Enter Status Here</string>
+	<string name="statustexthint"> What is Joshy doing? How is he doing? </string>
+<string name="btn_uploadexistphototext"> Put up an existing photo of Joshy</string>
+<string name="btn_takeprofilepictext"> Take a new profile pic of Joshy</string>
+<string name="btn_takevideotext"> Shoot a video of Joshy!</string>
+<string name="btn_recordjoshymakingsounds"> Record Joshy</string>
+<string name="btn_visualizejoshytext"> Visualize Joshy</string>
+<string name="btn_scrapbookjoshytext"> See Joshys Scrapbook! </string>
+ <string name="txtChildname">Joshy!</string>
+ <string name="btn_signup">Sign up Now!</string>
+  <string name="txtParentfname">Your First Name</string>
+ <string name="txtParentlname">Your Last Name</string>
+ <string name="txtEmail">Email Address</string>
+ <string name="txtChildfname">Child First Name</string>
+ <string name="txtChildlname">Child Last Name</string>
+ <string name="vTxtfname">Your First Name</string>
+ <string name="hintParentfname">Enter Your First Name</string>
+ <string name="hintParentlname">Enter Your Last Name</string>
+ <string name="hinttxtemail">Enter Your Email Address</string>
+ <string name="hinttxtchildfname">Enter Child First Name</string>
+ <string name="hintTxtchildlname">Enter Child Last Name</string>
+ <string name="txt_signup">Sign up for Bean Sprout Now!</string>
+ <string name="btn_submitsignup">Submit</string>
 </resources>
